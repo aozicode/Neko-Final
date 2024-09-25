@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: Antic, sans-serif;
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.aabout-container {
+  background: url('../assets/about/bg2final.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.about-container {
+  background: url('../assets/about/bgfinal.png') no-repeat center center;
+  background-size: cover;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 90%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* About Content (Left Side) */
+.about-content {
+  flex: 1;
+  text-align: left;
+  padding-left: 10%;
+}
+
+/* Heading Style */
+.about-heading {
+  font-size: 75px;
+  font-family: 'Chewy', sans-serif;
+  font-weight: bold;
+}
+
+/* Subheading Style */
+.about-subheading {
+  font-size: 24px;
+  font-family: 'Antic', sans-serif;
+  font-weight: 400;
+}
+
+/* About Description (Right Side) */
+.about-description {
+  flex: 1;
+  padding-right: 10%;
+  text-align: right;
+}
+
+.about-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: 'Antic', sans-serif;
+}
+
+/* Mission and Vision Section */
+.mission-vision-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  text-align: center;
+  background-color: #F0D2E8;
+  padding-top: 10px;
+}
+
+.mission-vision {
+  flex: 1;
+  padding: 30px 30px;
+  background-color: #ffffff;
+}
+
+.mission-vision h2 {
+  font-size: 2rem;
+  margin: 20px;
+  color: #000000;
+  font-family: 'Chewy', sans-serif;
+}
+
+.mission-vision p {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+/* Divider line between mission and vision */
+.divider {
+  height: 100%;
+  width: 10px;
+  background-color: #000;
+  margin: 0 20px;
+}
+
+/* About the team */
+.team-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.team-section h5 {
+  font-size: 2rem;
+  font-family: 'Chewy', sans-serif;
+}
+
+.team-section p {
+  font-size: 1.3 rem;
+  font-style:italic;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px;
+}
+.team-member {
+  width: calc(33.33% - 20px);
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-member-img {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc; /* Placeholder background color */
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.team-member h3 {
+  font-size: 1.3rem;
+  margin: 0px 0;
+}
+
+.team-member h4 {
+  font-size: 1rem;
+  color: #000000;
+  margin: 15px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #555;
+  margin: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .about-description {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .mission-vision-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission-vision {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .photo-container {
+    margin-top: 20px;
+  }
+
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/*Footer*/
+.footer {
+  background-color: #F0D2E8;
+  padding: 1rem;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}

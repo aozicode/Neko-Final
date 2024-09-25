@@ -1,0 +1,47 @@
+/* Container for each team member card */
+.team-member {
+  width: calc(33.33% - 20px);
+  max-width: 350px; 
+  text-align: center; 
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background: #ffff;
+}
+
+/* Container for team member images */
+.team-member-img-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; 
+  overflow: hidden; 
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  margin-top: 20px; /* Reduced margin-top */
+}
+
+/* Circular profile images */
+.team-member-img {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.placeholder-img {
+  filter: grayscale(100%) sepia(1) hue-rotate(-85deg) saturate(0.7) contrast(1.2)
+}
+
+.real-img {
+  opacity: 0; 
+}
+
+.team-member-img-container:hover .real-img {
+  opacity: 1; 
+}
+
+.team-member-img-container:hover .placeholder-img {
+  opacity: 0; 
+}
