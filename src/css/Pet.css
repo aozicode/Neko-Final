@@ -46,16 +46,14 @@
 }
 
 .animalDetails img{
-    position: relative;
-    top: 25px;
-    width: 150px;
-    height: auto;
-    max-height: 480px;
-    min-width: 360px;
-    min-height: 480px;
-    z-index: 1;
-    border-radius: 70%;
-    overflow: hidden;
+  position: relative;
+  top: 25px;
+  width: 450px; /* Adjust this width as needed */
+  height: 450px; /* Set a fixed height to maintain circular shape */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  border-radius: 50%; /* Makes the image circular */
+  border: 3px solid #F8F7F4;
+  z-index: 1;
 }
   
   .animalDetails h2 {

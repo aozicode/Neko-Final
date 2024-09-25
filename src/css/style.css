@@ -170,7 +170,7 @@ html {
   }
   
 .animal-images img {
-    width: 275px; 
+    width: 300px; 
     height: auto; /* Maintain aspect ratio */
     border-radius: 15px; 
 }

@@ -44,7 +44,7 @@ const Profile6 = () => {
         }}>
             <div className="animalDetails">
                 <img src={petImage6} alt="animal_image" />
-                <h2>Miko</h2>
+                <h2>Cristobal</h2>
                 <h3>Aspin</h3>
             </div>
 
@@ -65,13 +65,13 @@ const Profile6 = () => {
 
             <div className="aboutPet"> 
                 <div className="tab-content">
-                    {activeTab === 'About Me' && <p><b>Name:</b> Miko</p>}
+                    {activeTab === 'About Me' && <p><b>Name:</b> Cristobal</p>}
                     {activeTab === 'About Me' && <p><b>Breed:</b> Aspin</p>}
                     {activeTab === 'About Me' && <p><b>Weight:</b> 34 kg</p>}
                     {activeTab === 'About Me' && <p><b>Age:</b> 6 years</p>}
                     {activeTab === 'About Me' && <p><b>Gender:</b> Male</p>}
-                    {activeTab === 'About Me' && <p><b>Personality:</b> Looney is a bundle of joy with a heart full of love. He’s playful, loyal, and always ready to make new friends. His golden fur and wagging tail are a constant source of happiness for everyone around him.</p>}
-                    {activeTab === 'My Story' && <p>Miko is a lovable Aspin with a heart full of adventure and a spirit that never quits. Known for his playful energy, he spends his days chasing after butterflies, exploring every corner of the yard, and making friends with anyone he meets. Miko’s playful bark and wagging tail bring smiles to everyone around him. When it’s time to wind down, he curls up next to his family, radiating warmth and affection. With his loyalty and cheerful demeanor, Miko proves that every day is a new opportunity for fun and love. </p>}
+                    {activeTab === 'About Me' && <p><b>Personality:</b> Cristobal is a bundle of joy with a heart full of love. He’s playful, loyal, and always ready to make new friends. His golden fur and wagging tail are a constant source of happiness for everyone around him.</p>}
+                    {activeTab === 'My Story' && <p>Cristobal is a lovable Aspin with a heart full of adventure and a spirit that never quits. Known for his playful energy, he spends his days chasing after butterflies, exploring every corner of the yard, and making friends with anyone he meets. Cristobal’s playful bark and wagging tail bring smiles to everyone around him. When it’s time to wind down, he curls up next to his family, radiating warmth and affection. With his loyalty and cheerful demeanor, Cristobal proves that every day is a new opportunity for fun and love. </p>}
                 </div>
             </div>
         </div>

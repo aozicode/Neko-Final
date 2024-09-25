@@ -13,37 +13,37 @@ const images = [
   {
     src: finalpic1, // Use the imported variable
     alt: 'Cat Image',
-    text: 'Description for Cat Image',
+    text: 'Looney',
     link: '/profile1'
   },
   {
     src: finalpic2,
     alt: 'Image 2',
-    text: 'Description for Image 2',
+    text: 'Ming',
     link: '/profile2'
   },
   {
     src: finalpic3,
     alt: 'Image 3',
-    text: 'Description for Image 3',
+    text: 'Kittles',
     link: '/profile3'
   },
   {
     src: finalpic4, // Use the imported variable
     alt: 'Cat Image',
-    text: 'Description for Cat Image',
+    text: 'Bella',
     link: '/profile4'
   },
   {
     src: finalpic5,
     alt: 'Image 2',
-    text: 'Description for Image 2',
+    text: 'Jinggoy',
     link: '/profile5'
   },
   {
     src: finalpic6,
     alt: 'Image 3',
-    text: 'Description for Image 3',
+    text: 'Cristobal',
     link: '/profile6'
   },
 ];

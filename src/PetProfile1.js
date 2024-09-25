@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './css/Pet.css'; // Assuming you have a CSS file for styles
 import petImage1 from './assets/animals/tgdog1.jpg'; // Import your pet image
+import backgroundImage from './assets/bgs/profbg.svg'; // Import background image
 
 const Profile1 = () => {
     const [activeTab, setActiveTab] = useState('About Me');
@@ -38,6 +39,9 @@ const Profile1 = () => {
         
         <div className="whole" 
         style={{ 
+            backgroundImage: `url(${backgroundImage})`, 
+            backgroundSize: 'cover', 
+            backgroundPosition: 'center', 
             minHeight: '110vh', 
             padding: '20px' 
         }}>
