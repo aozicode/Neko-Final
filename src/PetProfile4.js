@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './css/Pet.css'; // Assuming you have a CSS file for styles
+import { Link } from 'react-router-dom';
 import petImage4 from './assets/animals/dog2.jpg'; // Import your pet image
 import backgroundImage from './assets/bgs/profbg.svg'; // Import background image
+import arrowImage from './assets/buttons_type/arrow.png';
 
 const Profile4 = () => {
     const [activeTab, setActiveTab] = useState('About Me');
@@ -75,6 +77,15 @@ const Profile4 = () => {
                     {activeTab === 'My Story' && <p> Bella is an exuberant and gentle Aspin who brings joy to everyone she meets. With her warm, inviting eyes and a wagging tail that never seems to stop, she’s the ultimate companion for adventure and relaxation alike. Bella loves to chase after balls in the park, splash around in the water, and make friends with everyone—both human and furry. When the day winds down, she’s happiest snuggling up on the couch with her family, offering gentle nudges and affectionate licks. Her playful spirit and unconditional love make every moment spent with Bella a treasured memory. </p>}
                 </div>
             </div>
+
+            <Link to="/animals" className="back-to-profile">
+                <img src={arrowImage} alt="Arrow" />
+            </Link>
+
+        {/* Footer Section */}
+        <footer className="indi-footer">
+            <p>&copy; {new Date().getFullYear()} West Neko to Inu. All rights reserved.</p>
+        </footer>
         </div>
     );
 };

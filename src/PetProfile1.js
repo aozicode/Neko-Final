@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './css/Pet.css'; // Assuming you have a CSS file for styles
+import { Link } from 'react-router-dom';
 import petImage1 from './assets/animals/tgdog1.jpg'; // Import your pet image
+import backgroundImage from './assets/bgs/profbg.svg'; // Import background image
+import arrowImage from './assets/buttons_type/arrow.png';
 
 const Profile1 = () => {
     const [activeTab, setActiveTab] = useState('About Me');
@@ -35,9 +38,10 @@ const Profile1 = () => {
     };
 
     return (
-        
-        <div className="whole" 
-        style={{ 
+        <div className="whole" style={{ 
+            backgroundImage: `url(${backgroundImage})`, 
+            backgroundSize: 'cover', 
+            backgroundPosition: 'center', 
             minHeight: '110vh', 
             padding: '20px' 
         }}>
@@ -66,7 +70,7 @@ const Profile1 = () => {
             <div className="aboutPet"> 
                 <div className="tab-content">
                     {activeTab === 'About Me' && <p><b>Name:</b> Looney</p>}
-                    {activeTab === 'About Me' && <p><b>Breed:</b> Aspin</p>}
+                    {activeTab === 'About Me' && <p><b>Breed:</b> Puspin</p>}
                     {activeTab === 'About Me' && <p><b>Weight:</b> 30 kg</p>}
                     {activeTab === 'About Me' && <p><b>Age:</b> 3 years</p>}
                     {activeTab === 'About Me' && <p><b>Gender:</b> Male</p>}
@@ -74,6 +78,15 @@ const Profile1 = () => {
                     {activeTab === 'My Story' && <p>One sunny afternoon at West Visayas State University, a group of students found Looney wandering near the library, looking lost and a bit scared. They gently coaxed him with some snacks from their lunchboxes and decided to take him in. Looney quickly became the unofficial mascot of the campus, attending classes, lounging in the student lounge, and even joining study groups. His favorite spot was under the big acacia tree, where he would nap while students read their books. Looney’s presence brought smiles and comfort to everyone, making the university feel even more like home. </p>}
                 </div>
             </div>
+
+            <Link to="/animals" className="back-to-profile">
+                <img src={arrowImage} alt="Arrow" />
+            </Link>
+
+        {/* Footer Section */}
+        <footer className="indi-footer">
+            <p>&copy; {new Date().getFullYear()} West Neko to Inu. All rights reserved.</p>
+        </footer>
         </div>
     );
 };
