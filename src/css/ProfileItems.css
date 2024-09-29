@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center; 
   align-items: center; 
-  margin-bottom: 20px; 
-  margin-top: 55px;
+  margin-bottom: 5px; 
+  margin-top: 50px;
   color: white;
   font-size: 50px;
   font-family: 'Chewy', sans-serif;
@@ -26,6 +26,11 @@
   width: 100%; 
   height: auto; 
   max-width: 350px;
+  transition: transform 0.3s ease; 
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
 }
 
 .grid-item p {

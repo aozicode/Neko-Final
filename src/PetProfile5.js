@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './css/Pet.css'; // Assuming you have a CSS file for styles
 import petImage5 from './assets/animals/dog5.jpg'; // Import your pet image
 import backgroundImage from './assets/bgs/profbg.svg'; // Import background image
+import { Link } from 'react-router-dom';
+import arrowImage from './assets/buttons_type/back_arrow.png';
 
 const Profile5 = () => {
     const [activeTab, setActiveTab] = useState('About Me');
@@ -75,6 +77,14 @@ const Profile5 = () => {
                     {activeTab === 'My Story' && <p>Jinggoy is a spirited Aspin with a charming personality that lights up every room. Always ready for adventure, he loves exploring the outdoors, sniffing out new scents, and playing with his favorite toys. His playful antics and infectious energy make him a favorite among kids and adults alike. Jinggoy has a soft side, too, often curling up next to his family for cozy evenings filled with affection and love. With his loyalty and friendly nature, Jinggoy brings joy to everyone he meets, proving that happiness is best shared with a wagging tail. </p>}
                 </div>
             </div>
+            <Link to="/animals" className="back-to-profile">
+                <img src={arrowImage} alt="Arrow" />
+            </Link>
+
+            {/* Footer Section */}
+            <footer className="indi-footer">
+            <p>&copy; {new Date().getFullYear()} West Neko to Inu. All rights reserved.</p>
+        </footer>
         </div>
     );
 };

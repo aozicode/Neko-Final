@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './css/Pet.css'; // Assuming you have a CSS file for styles
-import petImage3 from './assets/animals/tgcat4.jpg'; // Import your pet image
-import backgroundImage from './assets/bgs/profbg.svg'; // Import background image
+import './css/Pet.css'; 
+import petImage3 from './assets/animals/tgcat4.jpg'; 
+import backgroundImage from './assets/bgs/profbg.svg'; 
+import { Link } from 'react-router-dom';
+import arrowImage from './assets/buttons_type/back_arrow.png';
 
 const Profile3 = () => {
     const [activeTab, setActiveTab] = useState('About Me');
@@ -75,6 +77,14 @@ const Profile3 = () => {
                     {activeTab === 'My Story' && <p>Kittles is a spirited Puspin whose vibrant coat matches her lively personality. Always on the lookout for adventure, she loves exploring her neighborhood, chasing butterflies, and playfully darting after her shadow. After a day of excitement, she turns into a cuddly companion, snuggling up with her humans and offering comforting nuzzles. A social butterfly at heart, Kittles welcomes new friends—both human and furry—with open paws, making every moment an adventure filled with joy and love. </p>}
                 </div>
             </div>
+            <Link to="/animals" className="back-to-profile">
+                <img src={arrowImage} alt="Arrow" />
+            </Link>
+
+            {/* Footer Section */}
+            <footer className="indi-footer">
+            <p>&copy; {new Date().getFullYear()} West Neko to Inu. All rights reserved.</p>
+        </footer>
         </div>
     );
 };

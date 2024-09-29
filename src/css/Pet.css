@@ -48,10 +48,10 @@
 .animalDetails img{
   position: relative;
   top: 25px;
-  width: 450px; /* Adjust this width as needed */
-  height: 450px; /* Set a fixed height to maintain circular shape */
-  object-fit: cover; /* Ensures the image covers the area without stretching */
-  border-radius: 50%; /* Makes the image circular */
+  width: 450px; 
+  height: 450px; 
+  object-fit: cover; 
+  border-radius: 50%; 
   border: 3px solid #F8F7F4;
   z-index: 1;
 }
@@ -61,14 +61,14 @@
     color: #000000;
     margin-bottom: 1px;
     margin-top: 30px;
-    font-family: 'Quicksand';
+    font-family: 'Chewy';
   }
 
   .animalDetails h3{
     font-size: 20px;
     color: #000000;
     margin-bottom: 20px;
-    font-family: 'Montserrat';
+    font-family: 'Antic';
     font-weight: lighter;
   }
 
@@ -124,7 +124,7 @@
     text-align: center;
     border-radius: 10px;
     cursor: pointer; /* Add cursor pointer for better UX */
-    font-family: 'Montserrat';
+    font-family: 'Antic';
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5), 0 0 1px rgba(0, 0, 0, 0.1);
 }
@@ -159,6 +159,7 @@
     position: absolute; 
     left: 700px; 
     top: 200px;
+    font-family: 'Antic';
 }
 
 .aboutPet p{
@@ -168,6 +169,35 @@
   letter-spacing: .15em; /* Adjust as needed */
   animation: fadeIn 1s forwards; /* Apply the fade-in effect */
   line-height: 1.5;
+}
+
+/*arrow design*/
+.back-to-profile {
+  position: absolute;
+  top: 15vh;
+  left: 13vh;
+  z-index: 999;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 60px;
+  height: 50px;
+}
+.back-to-profile img{
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.back-to-profile:hover {
+  transform: scale(.90); 
+}
+
+.indi-footer {
+  padding: 1rem;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  margin-top: 103vh;
 }
 
 /* The fade-in effect */

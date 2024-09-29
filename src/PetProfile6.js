@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import './css/Pet.css'; // Assuming you have a CSS file for styles
 import petImage6 from './assets/animals/dog6.jpg'; // Import your pet image
 import backgroundImage from './assets/bgs/profbg.svg'; // Import background image
+import { Link } from 'react-router-dom';
+import arrowImage from './assets/buttons_type/back_arrow.png';
+
+
 
 const Profile6 = () => {
     const [activeTab, setActiveTab] = useState('About Me');
@@ -74,6 +78,14 @@ const Profile6 = () => {
                     {activeTab === 'My Story' && <p>Cristobal is a lovable Aspin with a heart full of adventure and a spirit that never quits. Known for his playful energy, he spends his days chasing after butterflies, exploring every corner of the yard, and making friends with anyone he meets. Cristobal’s playful bark and wagging tail bring smiles to everyone around him. When it’s time to wind down, he curls up next to his family, radiating warmth and affection. With his loyalty and cheerful demeanor, Cristobal proves that every day is a new opportunity for fun and love. </p>}
                 </div>
             </div>
+            <Link to="/animals" className="back-to-profile">
+                <img src={arrowImage} alt="Arrow" />
+            </Link>
+
+            {/* Footer Section */}
+            <footer className="indi-footer">
+            <p>&copy; {new Date().getFullYear()} West Neko to Inu. All rights reserved.</p>
+        </footer>
         </div>
     );
 };
