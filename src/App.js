@@ -82,6 +82,10 @@ function App() {
           </div>
         </div>
       </div>
+      {/* Footer Section */}
+      <footer className="footer">
+            <p>&copy; {new Date().getFullYear()} West Neko to Inu. All rights reserved.</p>
+        </footer>
     </div>
   );
 }
