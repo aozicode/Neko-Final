@@ -11,7 +11,7 @@ import finalpic6 from './assets/animals/finalpic6.png';
 
 const images = [
   {
-    src: finalpic1, // Use the imported variable
+    src: finalpic1, 
     alt: 'Cat Image',
     text: 'Looney',
     link: '/profile1'
@@ -29,7 +29,7 @@ const images = [
     link: '/profile3'
   },
   {
-    src: finalpic4, // Use the imported variable
+    src: finalpic4, 
     alt: 'Cat Image',
     text: 'Bella',
     link: '/profile4'

@@ -1,6 +1,6 @@
 import React from 'react';
-import './css/About.css'; // Ensure you import the CSS file
-import TeamMember from './Teammember'; // Adjust the import path as needed
+import './css/About.css'; 
+import TeamMember from './Teammember'; 
 
 // Import images
 import { default as ashleyImage, default as placeholderAshley } from './assets/about/ashley.jpg';

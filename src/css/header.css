@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 
-/*design for header*/
+
 .header {
     position: fixed;
     top: 0;
@@ -11,9 +11,9 @@
     height: 80px;
     width: 100%;
     padding: 20px 75px;
-    /* background: linear-gradient(90deg, rgba(227,211,255,1) 0%, rgba(248,247,244,1) 100%);  */
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Apply blur effect */
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); 
     z-index: 9999;
     display: flex;
     justify-content: space-between;
@@ -44,15 +44,15 @@
     width: 0;
     height: 2px;
     background: #313638;
-    transition: width 0.3s; /* Smooth transition */
+    transition: width 0.3s; 
 }
 
 .navbar a:hover::before,
 .navbar a.active-link::before {
-    width: 100%; /* Full width for hover and active */
+    width: 100%; 
 }
 
 .active-link {
-    font-weight: bold; /* Optional: make it bold */
+    font-weight: bold; 
 }
 }

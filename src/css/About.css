@@ -17,7 +17,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* About Section */
 .aabout-container {
   background: url('../assets/about/bg2final.png') no-repeat center center;
   background-size: cover;
@@ -38,28 +37,24 @@ body {
   box-sizing: border-box;
 }
 
-/* About Content (Left Side) */
 .about-content {
   flex: 1;
   text-align: left;
   padding-left: 10%;
 }
 
-/* Heading Style */
 .about-heading {
   font-size: 75px;
   font-family: 'Chewy', sans-serif;
   font-weight: bold;
 }
 
-/* Subheading Style */
 .about-subheading {
   font-size: 24px;
   font-family: 'Antic', sans-serif;
   font-weight: 400;
 }
 
-/* About Description (Right Side) */
 .about-description {
   flex: 1;
   padding-right: 10%;
@@ -72,7 +67,6 @@ body {
   font-family: 'Antic', sans-serif;
 }
 
-/* Mission and Vision Section */
 .mission-vision-container {
   display: flex;
   justify-content: center;
@@ -101,7 +95,6 @@ body {
   color: #000000;
 }
 
-/* Divider line between mission and vision */
 .divider {
   height: 100%;
   width: 10px;
@@ -109,7 +102,7 @@ body {
   margin: 0 20px;
 }
 
-/* About the team */
+
 .team-section {
   text-align: center;
   margin-top: 50px;
@@ -141,7 +134,7 @@ body {
 .team-member-img {
   width: 200px;
   height: 200px;
-  background-color: #ccc; /* Placeholder background color */
+  background-color: #ccc;
   border-radius: 50%;
   margin: 20px;
 }
@@ -163,7 +156,6 @@ body {
   margin: 15px;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;

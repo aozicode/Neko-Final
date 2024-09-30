@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './css/Pet.css'; // Assuming you have a CSS file for styles
+import './css/Pet.css'; 
 import { Link } from 'react-router-dom';
-import petImage1 from './assets/animals/tgdog1.jpg'; // Import your pet image
-import backgroundImage from './assets/bgs/profbg.svg'; // Import background image
+import petImage1 from './assets/animals/tgdog1.jpg'; 
+import backgroundImage from './assets/bgs/profbg.svg'; 
 import arrowImage from './assets/buttons_type/back_arrow.png';
 
 const Profile1 = () => {
@@ -18,14 +18,14 @@ const Profile1 = () => {
         
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
-                // Remove 'active' class from all tabs
+                
                 tabs.forEach(t => t.classList.remove('active'));
-                // Add 'active' class to the clicked tab
+               
                 tab.classList.add('active');
             });
         });
 
-        // Cleanup event listeners on unmount
+        
         return () => {
             tabs.forEach(tab => {
                 tab.removeEventListener('click', () => {});

@@ -1,6 +1,5 @@
-
 import './css/style.css';
-import React, { useEffect } from 'react';
+import React from 'react';
 import animal1 from './assets/animals/cat1.jpg';
 import animal2 from './assets/animals/cat2.jpeg';
 import animal3 from './assets/animals/dog3.jpg';
@@ -25,17 +24,13 @@ export const images = {
   paw_print,
 };
 
-// A section should have class name and identifier
-
 function App() {
   const scrollDown = () => {
-    // Check if window.scrollBy works in your environment
     window.scrollBy({
-      bottom: window.innerHeight,  // Scroll down by 100vh (the height of the current viewport)
-      behavior: 'smooth'        // Smooth scrolling
+      top: window.innerHeight,
+      behavior: 'smooth'
     });
-
-  }
+  };
 
   const handleClick = () => {
     alert('Put redirect here');
@@ -44,7 +39,7 @@ function App() {
   return (
     <div className="App">
       <div className="background">
-        <div id="section-0" className="section section-0"> {/* Example */}
+        <div id="section-0" className="section section-0">
           <div className="section0-container">
             <div className="s1Wrapper-left">
               <div className="s1Txt">
@@ -54,17 +49,15 @@ function App() {
               </div>
             </div>
             <div className="s1Wrapper-right">
-              <img src={images.catdog} alt="Cat 1" />
+              <img src={images.catdog} alt="Cat and Dog" />
             </div>
           </div>
-
         </div>
 
         <div id="section-1" className="section section-1">
           <div className="section1_container">
             <div className="s2wrapper-right">
               <div className="s2Txt2-container">
-
                 <div className="s2Txt2">
                   <h2>Meet the Animals</h2>
                   <h1>Our Furry Taga-West</h1>
@@ -82,10 +75,9 @@ function App() {
           </div>
         </div>
       </div>
-      {/* Footer Section */}
       <footer className="footer">
-            <p>&copy; {new Date().getFullYear()} West Neko to Inu. All rights reserved.</p>
-        </footer>
+        <p>&copy; {new Date().getFullYear()} West Neko to Inu. All rights reserved.</p>
+      </footer>
     </div>
   );
 }

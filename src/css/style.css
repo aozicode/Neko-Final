@@ -8,13 +8,9 @@ html {
 
 .background {
     background-image: url('../assets/bgs/wn_bg.png');
-    /* Path to your image */
     background-size: cover;
-    /* Makes sure the image covers the whole section */
     background-position: center;
-    /* Centers the image */
     background-repeat: no-repeat;
-    /* Prevents the image from repeating */
     height: 200vh;
     width: 100%;
     display: flex;
@@ -26,11 +22,9 @@ html {
     height: 100vh;
 }
 
-/* Section 0 */
 .section-0 {
     display: flex;
     position: relative;
-    /* Enables Flexbox layout */
     justify-content: center;
     flex-direction: column;
 
@@ -38,17 +32,13 @@ html {
 
 .section0-container {
     display: flex;
-    /* Enables Flexbox layout */
     justify-content: space-between;
-    /* Spaces out the child elements */
     align-items: center;
 }
 
 .s1Wrapper-left {
     flex: 1;
-    /* Allows this div to take up available space */
     padding: 20px;
-    /* Optional: Adds padding around the content */
     box-sizing: border-box;
     margin-left: 100px;
 }
@@ -59,17 +49,13 @@ html {
 
 .s1Txt h1 {
     font-size: 15vh;
-    /* Adjust font size as needed */
     margin: 0;
-    /* Removes default margin */
     font-family: 'Chewy', sans-serif;
 }
 
 .s1Txt h2 {
     font-size: 3.5vh;
-    /* Adjust font size as needed */
     margin: 10px 0;
-    /* Adds space above and below */
     font-family: 'Antic', sans-serif;
 }
 
@@ -77,19 +63,17 @@ html {
     flex: 1;
     display: flex;
     justify-content: center;
-    /* Centers the image horizontally within its container */
     align-items: center;
-    /* Centers the image vertically within its container */
     padding: 20px;
 }
 
 .s1Wrapper-right img {
     width: 700px;
-    /* Ensures the image does not exceed the container's width */
+  
     height: auto;
 }
 
-/* Section 2 */
+
 .section-1 {
     position: relative;
 }
@@ -108,14 +92,14 @@ html {
 
 .section-1 h1 {
     font-size: 5rem;
-    /* Adjust font size as needed */
+   
     margin: 0;
-    /* Removes default margin */
+
 }
 
 .section-1 h2 {
     font-size: 1.5rem;
-    /* Adjust font size as needed */
+   
 }
 
 .s2wrapper-left {
@@ -171,7 +155,7 @@ html {
   
 .animal-images img {
     width: 300px; 
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
     border-radius: 15px; 
 }
   

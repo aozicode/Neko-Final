@@ -4,7 +4,7 @@ import './css/header.css';
 import logo from './assets/logo/wnlogo.ico';
 
 const isActive = (match, location) => {
-    return match ? true : false; // Adjust logic as needed
+    return match ? true : false; 
 };
 
 function Header() {
