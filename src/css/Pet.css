@@ -1,6 +1,5 @@
 .whole {
-  padding-top: 75px;
-  min-height: 100vh;
+  min-height: 90vh;
   overflow: hidden;
   margin: 0;
 }
@@ -150,7 +149,7 @@
 
 /*arrow design*/
 .back-to-profile {
-  position: fixed;
+  position: absolute;
   top: 19vh;
   left: 4vh;
   z-index: 999;

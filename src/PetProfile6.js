@@ -42,7 +42,7 @@ const Profile6 = () => {
             backgroundImage: `url(${backgroundImage})`, 
             backgroundSize: 'cover', 
             backgroundPosition: 'center', 
-            
+            minHeight: '100vh',
         }}>
             <div className="animalDetails">
                 <img src={petImage6} alt="animal_image" />

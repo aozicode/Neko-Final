@@ -42,8 +42,7 @@ const Profile1 = () => {
             backgroundImage: `url(${backgroundImage})`, 
             backgroundSize: 'cover', 
             backgroundPosition: 'center', 
-            minHeight: '110vh', 
-            padding: '20px' 
+            minHeight: '100vh', 
         }}>
             
             <div className="animalDetails">
