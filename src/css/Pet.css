@@ -16,7 +16,7 @@
   border-radius: 10px;
   margin-bottom: 30px;
   position: absolute; 
-  left: 9vw;
+  left: 9vw; /* adjusted*/
   top: 160px; /* Moved down 100px */
   filter: drop-shadow(0px 0px 7px #6b6b6b);
   box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5), 0 0 1px rgba(0, 0, 0, 0.1);
@@ -86,8 +86,8 @@
   display: flex;
   justify-content: center;
   gap: 1px;
-  left: calc(7vw + 450px + 30px);
-  top: 25vh;
+  left: calc(7vw + 450px + 30px); /* adjusted*/
+  top: 25vh; /* adjusted*/
 }
 
 .tab {
@@ -129,8 +129,8 @@
   box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5), 0 0 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
   position: absolute; 
-  left: calc(7vw + 450px + 30px);
-  top: 33.4vh;
+  left: calc(7vw + 450px + 30px); /* adjusted*/
+  top: 33.4vh; /* adjusted*/
 }
 
 .aboutPet p {
@@ -150,13 +150,13 @@
 /*arrow design*/
 .back-to-profile {
   position: absolute;
-  top: 19vh;
-  left: 4vh;
+  top: 22vh;
+  left: 6vh;
   z-index: 999;
   cursor: pointer;
   transition: left 0.3s ease;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
 .back-to-profile img{
   width: 100%;

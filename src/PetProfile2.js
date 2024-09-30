@@ -3,7 +3,7 @@ import './css/Pet.css'; // Assuming you have a CSS file for styles
 import { Link } from 'react-router-dom';
 import petImage2 from './assets/animals/tgcat1.jpg'; // Import your pet image
 import backgroundImage from './assets/bgs/profbg.svg'; // Import background image
-import arrowImage from './assets/buttons_type/arrow.png';
+import arrowImage from './assets/buttons_type/back_arrow.png';
 
 const Profile2 = () => {
     const [activeTab, setActiveTab] = useState('About Me');
